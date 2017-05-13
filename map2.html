@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://d3js.org/d3.v3.js"></script>
+        <script src="colorbrewer.min.js"></script>
+        <style>
+            
+            div {
+                display: inline-block;
+            }
+
+            .state {
+                fill: gray;
+                stroke: black;
+            }
+            
+            body {
+                font-family: sans-serif;
+                font-size: 11px;
+            }
+
+            .xaxis path,
+            .xaxis line {
+                fill: none;
+                stroke: #000;
+                shape-rendering: crispEdges;
+            }
+
+            .yaxis path,
+            .yaxis line {
+                fill: none;
+                stroke: #000;
+                shape-rendering: crispEdges;
+            }
+
+            circle {
+                fill: #f00; 
+                stroke: #000;
+            }
+
+            .label {
+                text-anchor: middle;
+                font-size: 12px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            #yearDiv {
+                position: relative;
+                margin: auto;
+                width: 100%;
+            }
+
+            #lineGraphDiv {
+                position: relative;
+                bottom: 300px;
+                left: 30px;
+            }
+
+            #mapDiv, #mapDiv2 {
+                position: relative;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="yearDiv"></div>
+        <div id="mapDiv2"></div>
+        <div id="lineGraphDiv"></div>
+        <div id="mapDiv"></div>
+    </body>
+    
+    <script src="map2.js"></script>
+</html>
